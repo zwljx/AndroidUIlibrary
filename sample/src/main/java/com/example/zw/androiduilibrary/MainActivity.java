@@ -8,16 +8,14 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.zw.library.entrance.LoginView;
+
 public class MainActivity extends AppCompatActivity {
 
-    Button btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String[] data = new String[]{"1","2","3"};
-        ListView lv = (ListView) findViewById(R.id.lv);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,data);
-        lv.setAdapter(adapter);
+
     }
 }

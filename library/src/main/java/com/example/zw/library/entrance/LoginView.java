@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
@@ -35,8 +37,6 @@ public class LoginView extends RelativeLayout{
     private EditText etPwd;
     private Button btnLogin;
 
-    LayoutParams logoParams,accountIconParams,pwdIconParams,etAccountParams,etPwdParams,btnLoginParams;
-
     public LoginView(Context context, AttributeSet attrs) {
         super(context, attrs);
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.LoginView);
@@ -53,12 +53,14 @@ public class LoginView extends RelativeLayout{
 
     private void initView(Context context) {
         //初始化登录界面所需控件
-        logo = new ImageView(context);
-        accountIcon = new ImageView(context);
-        pwdIcon = new ImageView(context);
-        etAccount = new EditText(context);
-        etPwd = new EditText(context);
-        btnLogin = new Button(context);
+        LayoutInflater layoutInflater = LayoutInflater.from(context);
+        View view = layoutInflater.inflate(R.layout.loginview,null);
+        logo = (ImageView) view.findViewById(R.id.logo);
+        accountIcon = (ImageView) view.findViewById(R.id.account_icon);
+        pwdIcon = (ImageView) view.findViewById(R.id.pwd_icon);
+        etAccount = (EditText) view.findViewById(R.id.account);
+        etPwd = (EditText) view.findViewById(R.id.pwd);
+        btnLogin = (Button) view.findViewById(R.id.login);
 
         //为控件设置属性
         logo.setBackground(logoBackground);
@@ -69,13 +71,7 @@ public class LoginView extends RelativeLayout{
         btnLogin.setTextColor(btnTextColor);
         btnLogin.setTextSize(btnTextSize);
 
-        //为控件设置布局
-        logoParams = new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        logoParams.addRule(RelativeLayout.CENTER_HORIZONTAL,TRUE);
-        logoParams.addRule(RelativeLayout.ALIGN_PARENT_TOP,TRUE);
-        addView(logo,logoParams);
-        accountIconParams = new
-
+        addView(view);
     }
 
 
