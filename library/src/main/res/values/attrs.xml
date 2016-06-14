@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoginView">
+        <attr name="logo"></attr>
+        <attr name="account_icon" format="reference"></attr>
+        <attr name="pwd_icon" format="reference"></attr>
+        <attr name="login_btn_text" format="string"></attr>
+        <attr name="login_btn_background" format="reference|color"></attr>
+        <attr name="login_btn_textSize" format="dimension"></attr>
+        <attr name="login_btn_textColor" format="color"></attr>
+    </declare-styleable>
+</resources>
