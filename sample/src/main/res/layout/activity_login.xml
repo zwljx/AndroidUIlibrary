@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.zw.library.entrance.LoginView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        custom:account_icon="@mipmap/ic_launcher"
+        custom:logo="@mipmap/ic_launcher"
+        custom:pwd_icon="@mipmap/ic_launcher"
+        custom:login_btn_background="#63b793"
+        custom:login_btn_text="登录"
+        custom:login_btn_textColor="#000000"
+        custom:login_btn_textSize="30sp">
+    </com.example.zw.library.entrance.LoginView>
+</LinearLayout>

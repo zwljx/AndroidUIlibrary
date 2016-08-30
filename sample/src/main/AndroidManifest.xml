@@ -15,6 +15,45 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".entrance.LoginActivity">
+            
+        </activity>
+        <activity android:name=".entrance.GuideActivity">
+            
+        </activity>
+        <activity android:name=".content.ContentListActivity">
+            
+        </activity>
+        <activity android:name=".content.ContentWaterfallActivity">
+            
+        </activity>
+        <activity android:name=".content.ContentFlowActivity">
+
+        </activity>
+        <activity android:name=".navigation.NavigationContentActivity">
+
+        </activity>
+        <activity android:name=".navigation.NavigationDrawerActivity">
+
+        </activity>
+        <activity android:name=".navigation.NavigationTabActivity">
+
+        </activity>
+        <activity android:name=".appurtenance.DownloadActivity">
+
+        </activity>
+        <activity android:name=".appurtenance.KeyboardActivity">
+
+        </activity>
+        <activity android:name=".appurtenance.LoadingActivity">
+
+        </activity>
+        <activity android:name=".appurtenance.PictureViewActivity">
+
+        </activity>
+        <activity android:name=".appurtenance.SateliteMenuActivity">
+
+        </activity>
     </application>
 
 </manifest>

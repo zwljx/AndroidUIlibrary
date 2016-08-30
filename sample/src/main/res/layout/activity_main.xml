@@ -5,36 +5,125 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.zw.androiduilibrary.MainActivity">
-
-    <com.example.zw.library.content.FlowLayout
+    <Button
+        android:id="@+id/login"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="aaaaa" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="bbbbbbbbbbbbb"
-            android:layout_marginBottom="30dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ccccccccc"
-            android:textSize="10sp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="dd"
-            android:layout_marginLeft="10dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="eeeee"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="fff"/>
-    </com.example.zw.library.content.FlowLayout>
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:layout_margin="10dp"
+        android:background="#445566"/>
+    <Button
+        android:id="@+id/guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="guide"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@id/login"/>
+    <TextView
+        android:layout_below="@id/login"
+        android:background="#334455"
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
+    <Button
+        android:id="@+id/navigation_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="navigation_drawer"/>
+    <Button
+        android:id="@+id/navigation_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigation_drawer"
+        android:layout_alignLeft="@id/navigation_drawer"
+        android:text="navigation_tab"/>
+    <Button
+        android:id="@+id/navigation_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigation_tab"
+        android:layout_alignLeft="@id/navigation_drawer"
+        android:text="navigation_content"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_below="@id/navigation_content"
+        android:background="#334455"
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
+    <Button
+        android:id="@+id/content_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="content_list"
+        android:layout_alignLeft="@id/navigation_content"
+        android:layout_below="@id/navigation_content"
+        android:layout_marginTop="10dp"
+        android:background="#445566"/>
+    <Button
+        android:id="@+id/content_flow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="content_flow"
+        android:background="#445566"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@id/content_list"
+        android:layout_toRightOf="@id/content_list" />
+    <Button
+        android:id="@+id/content_waterfall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="content_waterfall"
+        android:layout_alignLeft="@id/navigation_content"
+        android:layout_below="@id/content_list"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_below="@id/content_waterfall"
+        android:background="#334455"
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
+    <Button
+        android:id="@+id/keyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="keyboard"
+        android:layout_alignLeft="@id/navigation_content"
+        android:layout_below="@id/content_waterfall"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/picture_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="picture_view"
+        android:background="#445566"
+        android:layout_alignBottom="@id/keyboard"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/keyboard" />
+    <Button
+        android:id="@+id/loading_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/keyboard"
+        android:layout_alignLeft="@id/keyboard"
+        android:text="loading"
+        android:background="#445566"/>
+    <Button
+        android:id="@+id/download"
+        android:text="download"
+        android:layout_toRightOf="@id/loading_tip"
+        android:layout_alignBaseline="@id/loading_tip"
+        android:layout_marginLeft="10dp"
+        android:background="#445566"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/satelite_menu"
+        android:text="satelite_nemu"
+        android:background="#445566"
+        android:layout_alignBaseline="@id/loading_tip"
+        android:layout_toRightOf="@id/download"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </RelativeLayout>
